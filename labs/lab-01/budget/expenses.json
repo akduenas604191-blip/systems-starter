@@ -1,0 +1,12 @@
+{
+  "weekly_budget": 400.0,
+  "expenses": [
+    {
+      "id": "33c55cd54be04defb915ec60ed450a31",
+      "date": "2026-11-10",
+      "amount": 1000.0,
+      "category": "Food",
+      "note": "groceries"
+    }
+  ]
+}
