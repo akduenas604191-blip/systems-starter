@@ -7,6 +7,13 @@
       "amount": 1000.0,
       "category": "Food",
       "note": "groceries"
+    },
+    {
+      "id": "68ab363fc221492e922f59b0930cdeef",
+      "date": "2026-11-10",
+      "amount": 1.0,
+      "category": "Food",
+      "note": ""
     }
   ]
 }
