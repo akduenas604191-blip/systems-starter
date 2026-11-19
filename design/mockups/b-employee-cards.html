@@ -1,0 +1,30 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Mockup B: Employee cards</title><style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f4f5;color:#18181b}
+.wrap{max-width:900px;margin:24px auto;background:#fff;padding:24px;border:1px solid #e4e4e7;border-radius:8px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:17px;margin:20px 0 8px}.muted{color:#71717a;font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:8px;border-bottom:1px solid #e4e4e7}th{background:#fafafa}
+.b{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:bold}
+.past{background:#27272a;color:#fff}.urgent{background:#fee2e2;color:#991b1b}.over{background:#fef3c7;color:#92400e}.ok{background:#d1fae5;color:#065f46}
+button{border:1px solid #d4d4d8;background:#fff;border-radius:4px;padding:5px 10px;font-size:13px;cursor:pointer}button.p{background:#18181b;color:#fff;border-color:#18181b}
+.card{border:1px solid #e4e4e7;border-radius:6px;padding:14px;margin-bottom:12px}.row{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+textarea{width:100%;box-sizing:border-box;font-family:inherit;font-size:13px;padding:8px;border:1px solid #d4d4d8;border-radius:4px}
+.assume{margin-top:24px;padding:12px;background:#eff6ff;border-left:4px solid #3b82f6;font-size:14px}
+</style></head><body><div class="wrap">
+<h1>Expense Deadline Tracker</h1><p class="muted">Mockup B: one card per employee, employees with the fewest days left first. Sample data is made up.</p>
+<details style="margin:12px 0"><summary class="muted">Add an open item</summary></details>
+<h2>Open items <span class="muted">· 6 items, 4 employees</span></h2>
+<div class="card"><div class="row"><div><b>E-3317</b> <span class="muted">· Operations</span><br><span class="muted">Not contacted yet</span></div><div><button class="p">Write reminder</button> <select><option>Teams</option></select> <button>Log follow-up</button></div></div>
+<div class="row" style="margin-top:10px"><span>Rental car · $289.99 <span class="muted">· charged Oct 3 · past auto-approval</span></span><span><span class="b past">Past auto-approval</span> <button>Submitted</button></span></div></div>
+<div class="card"><div class="row"><div><b>E-1042</b> <span class="muted">· Sales</span><br><span class="muted">Last contacted Nov 18 via Teams · 1 follow-up</span></div><div><button class="p">Hide reminder</button> <select><option>Teams</option></select> <button>Log follow-up</button></div></div>
+<textarea rows="5" style="margin-top:10px">Hi E-1042, you have 2 open expense items that still need a report:
+• Harbor Hotel, $412.80, charged Oct 8: 3 days left before it auto-approves
+• Airport parking, $36.00, charged Oct 9: 4 days left before it auto-approves
+You won't be paid back for the reimbursement items until the report is submitted.
+Can you submit today? Reply with a photo of the receipt and I'll help get it attached. Thanks!</textarea>
+<p><button class="p">Copy</button> <span class="muted">Copied</span></p>
+<div class="row"><span>Harbor Hotel · $412.80 <span class="muted">· charged Oct 8 · 3 days left</span></span><span><span class="b urgent">Urgent</span> <button>Submitted</button></span></div>
+<div class="row" style="margin-top:6px"><span>Airport parking · $36.00 <span class="muted">· reimbursement · 4 days left</span></span><span><span class="b urgent">Urgent</span> <button>Submitted</button></span></div></div>
+<div class="card"><div class="row"><div><b>E-2290</b> <span class="muted">· Marketing</span><br><span class="muted">Not contacted yet</span></div><div><button class="p">Write reminder</button> <select><option>Teams</option></select> <button>Log follow-up</button></div></div>
+<div class="row" style="margin-top:10px"><span>Print shop · $128.50 <span class="muted">· 12 days left</span></span><span><span class="b over">Overdue</span> <button>Submitted</button></span></div></div>
+<div class="assume"><b>What this assumes about the user:</b> The coordinator follows up with people, not charges, so one message that covers everything an employee owes is better than one message per charge. It assumes the coordinator sends reminders from their own Teams or phone, so the tool only needs to write and copy the message.</div>
+</div></body></html>

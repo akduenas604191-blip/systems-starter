@@ -1,3 +1,5 @@
+> **HYPOTHETICAL PRACTICE: not a real interview.** Written by Claude as a practice example. It is not evidence and is not cited in `discovery/requirements.md`.
+
 # Journey Maps: Expense Report Deadline & Compliance System
 
 Scores run from 1 (very frustrating) to 5 (smooth). Both maps show the current (as-is) process.

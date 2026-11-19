@@ -1,3 +1,5 @@
+> **HYPOTHETICAL PRACTICE: not a real interview.** Written by Claude as a practice example. It is not evidence and is not cited in `discovery/requirements.md`.
+
 Interview 1: D.M., Expense Compliance Specialist
 
 Background: D.M. has worked in Accounts Payable for 4 years at a company of about 350 employees. She's the main person who checks expense reports against policy and follows up when they're late.
