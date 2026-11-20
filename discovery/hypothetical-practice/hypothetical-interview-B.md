@@ -1,3 +1,5 @@
+> **HYPOTHETICAL PRACTICE: not a real interview.** Written by Claude as a practice example. It is not evidence and is not cited in `discovery/requirements.md`.
+
 Interview 2: J.T., Regional Sales Representative
 
 Background: J.T. is on the road 2–3 weeks a month visiting clients. They spend about $1,500 a month on the corporate card (hotels, meals, rental cars) and pay out of pocket for mileage, parking, and tolls.
