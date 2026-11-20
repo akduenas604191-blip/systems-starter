@@ -54,11 +54,11 @@ Stored in the browser's localStorage under the key `expense-deadline-tracker-v1`
 - **Connecting to the company's expense platform:** no access, and it would use real data.
 
 ## Out of scope for v1
-From the MVP scope: CSV import (FR-5), manager escalation messages (FR-6), monthly on-time reporting (FR-7), automatic sending (FR-8), and changing the platform's auto-approval rule (FR-9). Also out: sign-in, multiple coordinators sharing data, and syncing across devices.
+From the MVP scope: manager escalation messages (FR-5) and a manager view (FR-6), CSV import (FR-7), employee self-service and phone receipt upload (FR-8, FR-9), monthly on-time reporting (FR-10), automatic sending (FR-11), and changing the platform's auto-approval rule (FR-12). Also out: sign-in, multiple coordinators sharing data, and syncing across devices.
 
 ## Open questions
 - What are the real submission deadline and auto-approval day at this company? 30 and 45 are placeholders, which is why they can be changed in Settings.
-- Do employees respond better to Teams or to text? Interview 2 should tell us.
-- What do managers want, and when (FR-6)? Interview 3 should tell us.
+- Do employees respond better to Teams or to text? Interview 2 says email and calendar alerts get missed but doesn't say which channel works. The riskiest-assumption test should answer this.
+- How many days before auto-approval should managers be told (FR-5)? Interview 3 wants notice "before expenses reach automatic approval" but didn't give a number.
 - How should the same employee typed two ways be matched (for example "E-1042" vs "E1042")?
 - Would the coordinator rather import the expense platform's overdue report than type items in?
