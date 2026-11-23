@@ -1,6 +1,5 @@
 # Interview 3: Department Manager (Operations)
 
-Names removed. Notes as written by the interviewer, transcribed from `BMIS_301_Interviews.docx`.
 
 **Interviewee:** Department Manager  
 **Department:** Operations  

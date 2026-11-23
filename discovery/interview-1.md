@@ -1,7 +1,5 @@
 # Interview 1: Expense Compliance Specialist (Finance / Accounts Payable)
 
-Names removed. Notes as written by the interviewer, transcribed from `BMIS_301_Interviews.docx`.
-
 **Interviewee:** Expense Compliance Specialist  
 **Department:** Finance / Accounts Payable  
 **Interview Objective:** Identify challenges associated with expense report submissions, deadline management, and compliance.

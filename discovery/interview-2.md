@@ -1,7 +1,5 @@
 # Interview 2: Donor Relations Representative (an employee who submits expense reports)
 
-Names removed. Notes as written by the interviewer, transcribed from `BMIS_301_Interviews.docx`.
-
 **Interviewee:** Donor relations representative  
 **Department:** Donor relations  
 **Interview Objective:** Understand the challenges employees experience when submitting expense reports and meeting deadlines.
