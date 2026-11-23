@@ -8,15 +8,14 @@ Problem statement
 
 Interviewer: From your side, what goes wrong with expense reports?
 
-J.T.: "Honestly, I'm one of the people who's late. It's not that I don't care. I'm in airports and client meetings, and by the time I'm back at a laptop I've got a stack of receipts in my bag and half of them are crumpled or gone. The reminder emails land in an inbox with 200 other emails. Then finance messages me, and I feel bad. This happens to me pretty much every month. Last quarter I lost about $180 in parking and mileage because I missed the window and just gave up. It also takes me 1 to 2 hours every time I finally sit down and rebuild everything."
+Honestly, I'm one of the people who's late. It's not that I don't care. I'm in airports and client meetings, and by the time I'm back at a laptop I've got a stack of receipts in my bag and half of them are crumpled or gone. The reminder emails land in an inbox with 200 other emails. Then finance messages me, and I feel bad. This happens to me pretty much every month. Last quarter I lost about $180 in parking and mileage because I missed the window and just gave up. It also takes me 1 to 2 hours every time I finally sit down and rebuild everything.
 
 Job to be done
-
-J.T.: "When I'm traveling and paying for something work-related, I want to capture the receipt and details right then in a few seconds, so I can get reimbursed quickly and not have finance chasing me at the end of the month."
+When I'm traveling and paying for something work-related, I want to capture the receipt and details right then in a few seconds, so I can get reimbursed quickly and not have finance chasing me at the end of the month.
 
 Users and stakeholders
 Role	Who (initials or title)	What they need from the system
-Primary user	J.T., Regional Sales Rep (and other frequent travelers)	Snap a receipt on the phone when buying something, and get reminders that aren't buried in email
+Primary user Regional Sales Rep (and other frequent travelers)	Snap a receipt on the phone when buying something, and get reminders that aren't buried in email
 Stakeholder (affected)	Finance / Compliance (D.M.)	Complete reports on time so they don't have to chase anyone
 Stakeholder (approves)	Sales Manager	Fast, simple approval from a phone
 Stakeholder (pays)	Company (reimbursement budget)	Accurate expenses that follow policy
@@ -25,11 +24,11 @@ Not for: "People who expense something once or twice a year. They don't need a w
 
 Persona
 
-J.T.: "Someone like me. Jordan, 28, Regional Sales Representative. Covers four states and spends more time in a rental car than at a desk. His goal is to get reimbursed fast and never think about expense reports. His frustrations are lost paper receipts, a desktop-only expense site that's painful on a phone, reminder emails buried under client mail, and feeling nagged. His current tools are a phone, a corporate card, a manila envelope of receipts, and the expense website on his laptop on Sunday nights."
+Someone like me. Jordan, 28, Regional Sales Representative. Covers four states and spends more time in a rental car than at a desk. His goal is to get reimbursed fast and never think about expense reports. His frustrations are lost paper receipts, a desktop-only expense site that's painful on a phone, reminder emails buried under client mail, and feeling nagged. His current tools are a phone, a corporate card, a manila envelope of receipts, and the expense website on his laptop on Sunday nights.
 
 Current process (as-is)
 
-J.T.: "This is what actually happens:"
+This is what actually happens:
 
 Jordan pays for a hotel, meal, or rental car with the corporate card, or pays out of pocket for parking and mileage.
 He shoves the paper receipt in a bag or envelope, or forgets to ask for one.

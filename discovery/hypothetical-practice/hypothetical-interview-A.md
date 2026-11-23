@@ -2,11 +2,11 @@
 
 Interview 1: D.M., Expense Compliance Specialist
 
-Background: D.M. has worked in Accounts Payable for 4 years at a company of about 350 employees. She's the main person who checks expense reports against policy and follows up when they're late.
+Background: D.M. has worked in Accounts Payable for 4 years. She's the main person who checks expense reports against policy and follows up when they're late.
 
 Problem statement
 
-Interviewer: In your own words, what's going wrong, how often, and what does it cost you?
+In your own words, what's going wrong, how often, and what does it cost you?
 
 D.M.: "Employees miss the deadline on their expense reports all the time. Corporate card charges are supposed to be reconciled within 30 days. If nothing has happened by day 45, the system auto-approves them so the books can close. Then those charges go through with no receipt, no business purpose, and no policy check. All of our compliance controls get skipped. It happens every month. Usually 15 to 20 percent of reports are late, and maybe 5 percent get all the way to auto-approval. I spend about 6 to 8 hours a month just chasing people, on top of the automated emails the system already sends. Employees who pay out of pocket lose too, because if they never submit, they never get their money back."
 
@@ -29,7 +29,7 @@ D.M.: "Picture someone like me. Dana, 31, Expense Compliance Specialist. She wor
 
 Current process (as-is)
 
-D.M.: "Here's how a month goes today:"
+D.M.: Here's how a month goes
 
 An employee makes a purchase on the corporate card, or pays out of pocket.
 The charge shows up in the expense platform within 1–3 days.
@@ -59,7 +59,7 @@ NFR-3	Performance	The overdue dashboard refreshes at least daily, so the data is
 NFR-4	Cost	Works with the existing expense platform. No new expense platform license	Interview 1
 Riskiest assumption
 
-D.M.: "I'm betting that people miss deadlines because they forget or the reminders get buried, not because they just don't care. If people ignore reminders on purpose, better reminders won't fix anything and we need a policy change instead. Test: Run a one-month pilot with one department, using Teams/SMS reminders with manager escalation. Compare their late rate to last month's and to a department without the pilot. If late reports don't drop by at least half, the assumption is wrong."
+I'm betting that people miss deadlines because they forget or the reminders get buried, not because they just don't care. If people ignore reminders on purpose, better reminders won't fix anything and we need a policy change instead. Test: Run a one-month pilot with one department, using Teams/SMS reminders with manager escalation. Compare their late rate to last month's and to a department without the pilot. If late reports don't drop by at least half, the assumption is wrong.
 
 MVP scope
 
