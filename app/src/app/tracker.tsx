@@ -2,6 +2,7 @@
 
 import { useEffect, useId, useState } from "react";
 import {
+  AUTO_APPROVE_DAYS,
   buildReminder,
   CHANNELS,
   daysLeft,
@@ -182,7 +183,6 @@ function SettingsForm({
   onSave: (settings: Settings) => void;
 }) {
   const [deadline, setDeadline] = useState(String(settings.deadlineDays));
-  const [autoApprove, setAutoApprove] = useState(String(settings.autoApproveDays));
   const [error, setError] = useState<string | null>(null);
   const [saved, setSaved] = useState(false);
 
@@ -197,11 +197,10 @@ function SettingsForm({
         onSubmit={(event) => {
           event.preventDefault();
           const d = Number(deadline);
-          const a = Number(autoApprove);
-          const problem = validateSettings(d, a);
+          const problem = validateSettings(d, AUTO_APPROVE_DAYS);
           setError(problem);
           setSaved(problem === null);
-          if (problem === null) onSave({ deadlineDays: d, autoApproveDays: a });
+          if (problem === null) onSave({ deadlineDays: d, autoApproveDays: AUTO_APPROVE_DAYS });
         }}
       >
         <label className="flex flex-col gap-1">
@@ -220,13 +219,12 @@ function SettingsForm({
           <span className="text-sm font-medium">Auto-approves (days after charge)</span>
           <input
             type="number"
-            value={autoApprove}
-            onChange={(e) => {
-              setAutoApprove(e.target.value);
-              setSaved(false);
-            }}
-            className={input}
+            value={AUTO_APPROVE_DAYS}
+            readOnly
+            aria-readonly="true"
+            className={`${input} cursor-not-allowed bg-zinc-100 text-zinc-500 dark:bg-zinc-800`}
           />
+          <span className="text-xs text-zinc-500">Fixed by the expense platform</span>
         </label>
         <button type="submit" className={primary}>
           Save settings

@@ -41,7 +41,11 @@ export type Settings = {
   autoApproveDays: number; // days after the charge the platform auto-approves it
 };
 
-export const DEFAULT_SETTINGS: Settings = { deadlineDays: 30, autoApproveDays: 45 };
+// The expense platform auto-approves reports 45 days after the charge. This is fixed by the
+// platform, so the tracker shows it in Settings but doesn't let anyone change it.
+export const AUTO_APPROVE_DAYS = 45;
+
+export const DEFAULT_SETTINGS: Settings = { deadlineDays: 30, autoApproveDays: AUTO_APPROVE_DAYS };
 
 // ---------- Dates ----------
 
@@ -162,8 +166,11 @@ export function validateSettings(deadlineDays: number, autoApproveDays: number):
   if (!Number.isInteger(deadlineDays) || deadlineDays < 1) {
     return "Submission deadline must be a whole number of days, 1 or more.";
   }
-  if (!Number.isInteger(autoApproveDays) || autoApproveDays <= deadlineDays) {
-    return "Auto-approval day must be a whole number greater than the submission deadline.";
+  if (!Number.isInteger(autoApproveDays)) {
+    return "Auto-approval day must be a whole number.";
+  }
+  if (autoApproveDays <= deadlineDays) {
+    return `Report due day must be less than the auto-approval day (${autoApproveDays}).`;
   }
   return null;
 }

@@ -57,6 +57,27 @@ describe("Tracker", () => {
     expect(await screen.findByText("Harbor Hotel · $412.80")).toBeTruthy();
   });
 
+  it("locks the auto-approval day at 45, even if an older save says otherwise", async () => {
+    window.localStorage.setItem(
+      "expense-deadline-tracker-v1",
+      JSON.stringify({ items: [], settings: { deadlineDays: 20, autoApproveDays: 60 } }),
+    );
+    render(<Tracker today={TODAY} />);
+    expect(await screen.findByText("Settings: report due day 20, auto-approves day 45")).toBeTruthy();
+    const field = screen.getByLabelText(/Auto-approves/) as HTMLInputElement;
+    expect(field.readOnly).toBe(true);
+    expect(field.value).toBe("45");
+  });
+
+  it("rejects a report due day of 45 or more and keeps the old settings (S1 criterion 8)", async () => {
+    render(<Tracker today={TODAY} />);
+    await screen.findByText("Settings: report due day 30, auto-approves day 45");
+    fireEvent.change(screen.getByLabelText(/Report due/), { target: { value: "45" } });
+    fireEvent.click(screen.getByRole("button", { name: "Save settings" }));
+    expect(screen.getByRole("alert").textContent).toBe("Report due day must be less than the auto-approval day (45).");
+    expect(screen.getByText("Settings: report due day 30, auto-approves day 45")).toBeTruthy();
+  });
+
   it("writes a reminder and reports a failed copy (S2 criteria 1 and 5)", async () => {
     setClipboard(undefined);
     render(<Tracker today={TODAY} />);
