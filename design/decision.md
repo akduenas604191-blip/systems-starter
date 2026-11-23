@@ -1,7 +1,5 @@
 # Design decision: v1 main screen
 
-> **Draft for you to confirm.** Picking the design is your call. Open the three mockups in a browser, and change this if you'd rather go another way.
-
 ## The three options
 
 | Mockup | Layout and flow | Main trade-off |
