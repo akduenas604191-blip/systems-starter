@@ -5,7 +5,7 @@ Acceptance criteria use the EARS pattern ("WHEN… THE SYSTEM SHALL…"). Each o
 
 **Terms used below**
 - **Days since charge** = today's date minus the item's charge date, in whole days.
-- **Days left** = auto-approval day (setting, default 45) minus days since charge.
+- **Days left** = auto-approval day (fixed at 45, set by the expense platform) minus days since charge.
 - **Status:** *Past auto-approval* if days left ≤ 0. Otherwise *Urgent* if days left ≤ 5. Otherwise *Overdue* if days since charge ≥ the submission deadline (setting, default 30). Otherwise *On track*.
 
 ---
@@ -18,11 +18,11 @@ Acceptance criteria:
 1. WHEN the compliance specialist submits the add-item form with an employee, merchant, amount, and charge date, THE SYSTEM SHALL add the item to the open list.
 2. WHEN the open list is shown, THE SYSTEM SHALL group items by employee, list the employee with the fewest days left first, and sort each employee's items by fewest days left first.
 3. THE SYSTEM SHALL show each item's days left and a status label (On track, Overdue, Urgent, or Past auto-approval) using the rules above.
-4. WHEN the compliance specialist changes the submission deadline or auto-approval day in Settings, THE SYSTEM SHALL recalculate days left and status for every item.
+4. WHEN the compliance specialist changes the submission deadline in Settings, THE SYSTEM SHALL recalculate days left and status for every item. The auto-approval day is shown in Settings but can't be changed.
 5. WHEN the page is reloaded, THE SYSTEM SHALL still show every item and setting entered before.
 6. IF the employee, merchant, or charge date is empty, or the amount is not a number greater than 0, THE SYSTEM SHALL show an error naming the field and SHALL NOT save the item.
 7. IF the charge date is in the future, THE SYSTEM SHALL show "Charge date can't be in the future" and SHALL NOT save the item.
-8. IF the auto-approval day entered in Settings is not greater than the submission deadline, THE SYSTEM SHALL show an error and keep the previous settings.
+8. IF the submission deadline entered in Settings is not less than the auto-approval day (45), THE SYSTEM SHALL show an error and keep the previous settings.
 9. IF there are no open items, THE SYSTEM SHALL show "No open items. Add one above, or load sample data."
 
 ### S2 (FR-3): Write a personal reminder

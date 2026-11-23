@@ -14,7 +14,7 @@ Full stories and EARS criteria: [user-stories.md](user-stories.md).
 - **Chosen mockup:** [design/mockups/b-employee-cards.html](../design/mockups/b-employee-cards.html), combined with the most-urgent-first sorting and status labels from Mockup A. The reasons and the heuristic checks are in [design/decision.md](../design/decision.md).
 
 One page, top to bottom:
-1. **Settings** (collapsed): the report due day and the auto-approval day.
+1. **Settings** (collapsed): the report due day (editable) and the auto-approval day (shown, locked at 45).
 2. **Add an open item** form.
 3. **Open items:** one card per employee, most urgent first. Each card has Write reminder, a channel picker, and Log follow-up. Each item shows its status label, with Submitted and Delete buttons. When there are no items, it says "No open items. Add one above, or load sample data."
 4. **Submitted:** items marked submitted, each with Undo.
@@ -35,7 +35,7 @@ Stored in the browser's localStorage under the key `expense-deadline-tracker-v1`
 | followUps | list of { at: date-time, channel: Teams / Text / Email / In person } | saved on each of the employee's open items |
 | submittedOn | date or empty | empty means still open |
 
-**Settings:** `deadlineDays` (default 30) and `autoApproveDays` (default 45, must be greater than `deadlineDays`).
+**Settings:** `deadlineDays` (default 30) and `autoApproveDays` (fixed at 45 because the expense platform sets it; shown in Settings but not editable). `deadlineDays` must be less than 45.
 
 **Calculated, not stored:** days since charge, days left, and status. The rules are at the top of [user-stories.md](user-stories.md).
 
@@ -65,7 +65,7 @@ From the MVP scope in [requirements.md](../discovery/requirements.md):
 Also out: sign-in, more than one compliance specialist sharing data, and syncing across devices.
 
 ## Open questions
-- What are the real submission deadline and auto-approval day at this company? 30 and 45 are placeholders, which is why they can be changed in Settings.
+- What is the real submission deadline at this company? 30 is a placeholder, which is why it can be changed in Settings. The auto-approval day is locked at 45 because the usability test showed that letting it change caused confusion and could break compliance.
 - Do employees respond better to Teams or to text? Interview 2 says email and calendar alerts get missed but doesn't say which channel works. The riskiest-assumption test should answer this.
 - Should clicking Copy log the follow-up automatically? [flow.md](../design/flow.md) marks Log follow-up as the step to cut first.
 - How long should the compliance specialist wait before following up again, and what happens if an employee submits only some of their items?
