@@ -417,7 +417,7 @@ function EmployeeCard({
             id={`${uid}-reminder`}
             readOnly
             value={reminder}
-            rows={group.items.length + 4}
+            rows={group.items.length * 2 + 4}
             className={`${input} font-mono text-sm`}
             onFocus={(e) => e.currentTarget.select()}
           />

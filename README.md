@@ -12,7 +12,7 @@
 
 | What | Link |
 |---|---|
-| Live app | *(paste your Vercel URL here after deploying)* |
+| Live app | https://systems-starter.vercel.app |
 | Requirements | [discovery/requirements.md](discovery/requirements.md) |
 | v1 spec | [specs/v1-spec.md](specs/v1-spec.md) |
 | User stories | [specs/user-stories.md](specs/user-stories.md) |
