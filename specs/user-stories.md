@@ -10,11 +10,11 @@ Acceptance criteria use the EARS pattern ("WHEN… THE SYSTEM SHALL…"). Each o
 
 ---
 
-## S1 (FR-1, FR-2): See who to chase first
+### S1 (FR-1, FR-2): See who to chase first
 
 As the **expense compliance specialist**, I want **to add open expense items and see them sorted by how close they are to auto-approval** so that **I chase the most urgent people first**.
 
-**Acceptance criteria**
+Acceptance criteria:
 1. WHEN the compliance specialist submits the add-item form with an employee, merchant, amount, and charge date, THE SYSTEM SHALL add the item to the open list.
 2. WHEN the open list is shown, THE SYSTEM SHALL group items by employee, list the employee with the fewest days left first, and sort each employee's items by fewest days left first.
 3. THE SYSTEM SHALL show each item's days left and a status label (On track, Overdue, Urgent, or Past auto-approval) using the rules above.
@@ -25,11 +25,11 @@ As the **expense compliance specialist**, I want **to add open expense items and
 8. IF the auto-approval day entered in Settings is not greater than the submission deadline, THE SYSTEM SHALL show an error and keep the previous settings.
 9. IF there are no open items, THE SYSTEM SHALL show "No open items. Add one above, or load sample data."
 
-## S2 (FR-3): Write a personal reminder
+### S2 (FR-3): Write a personal reminder
 
 As the **expense compliance specialist**, I want **a ready-to-send reminder listing everything an employee still owes** so that **I can paste it into Teams or a text instead of writing each follow-up from scratch**.
 
-**Acceptance criteria**
+Acceptance criteria:
 1. WHEN the compliance specialist clicks "Write reminder" for an employee, THE SYSTEM SHALL show a message that names the employee and lists each of their open items with merchant, amount, charge date, and days left.
 2. WHEN any of that employee's open items is a reimbursement, THE SYSTEM SHALL add the line "You won't be paid back for the reimbursement items until the report is submitted."
 3. WHEN an item in the reminder is past auto-approval, THE SYSTEM SHALL describe it as "past the auto-approval date" instead of giving days left.
@@ -37,11 +37,11 @@ As the **expense compliance specialist**, I want **a ready-to-send reminder list
 5. IF copying to the clipboard fails, THE SYSTEM SHALL show "Couldn't copy. Select the text and copy it yourself." and leave the message on screen.
 6. THE SYSTEM SHALL let the compliance specialist write and copy a reminder in 3 clicks or fewer (NFR-2).
 
-## S3 (FR-4): Log follow-ups and close items
+### S3 (FR-4): Log follow-ups and close items
 
 As the **expense compliance specialist**, I want **to record each follow-up and mark items submitted** so that **I know who I've already contacted and stop chasing people who are done**.
 
-**Acceptance criteria**
+Acceptance criteria:
 1. WHEN the compliance specialist logs a follow-up for an employee and picks a channel (Teams, Text, Email, or In person), THE SYSTEM SHALL save the date, time, and channel on each of that employee's open items.
 2. THE SYSTEM SHALL show each employee's most recent follow-up as "Last contacted <date> via <channel>" and the number of follow-ups so far.
 3. IF an employee has never been followed up, THE SYSTEM SHALL show "Not contacted yet".
